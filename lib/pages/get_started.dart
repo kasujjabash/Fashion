@@ -74,18 +74,20 @@ class _GetStartedPageState extends State<GetStartedPage> {
                     const SizedBox(
                       height: 20,
                     ),
-                    Row(
-                      children: [
-                        Image.asset(
-                          'assets/images/BASH-01.png',
-                          width: 20,
-                          height: 20,
-                          fit: BoxFit.contain,
-                        )
-                      ],
-                    )
                   ],
-                )
+                ),
+
+                Container(
+                  child: const Image(
+                    image: AssetImage(
+                      'assets/images/fashion_girl.jpg',
+                    ),
+                    width: 200,
+                    height: 200,
+                    fit: BoxFit.contain,
+                    alignment: Alignment.center,
+                  ),
+                ),
               ],
             ),
           ),
